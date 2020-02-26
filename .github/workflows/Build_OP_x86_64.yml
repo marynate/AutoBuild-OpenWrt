@@ -11,9 +11,11 @@ on:
   release:
     types: [published]
 
-  #push:
-  #  branches: 
-  #    - master
+  push:
+    branches: 
+      - build
+    paths:
+       - '.build'
 
   #schedule:
   #  - cron: 0 8 * * 5
